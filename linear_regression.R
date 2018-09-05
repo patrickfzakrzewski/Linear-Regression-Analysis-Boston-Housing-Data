@@ -6,7 +6,7 @@ names(Boston) #provides names of all variables in the Boston dataset
 ?Boston #gives more detailed information on each variable
 
 plot(medv~lstat, Boston)  #plots medv variable as a function of lstat
-fit1 = lm(med~lstat, data=Boston) #creates linear fit for medv(lstat)
+fit1 = lm(medv~lstat, data=Boston) #creates linear fit for medv(lstat)
 names(fit1) #gives names of variables in linear model such as coefficients and residuals
 summary(fitl) #gives residuals, t-values, and p-values for fit1
 abline(fit1,col="red") #adds red line on fit1
@@ -50,3 +50,5 @@ regplot = function(x,y,...){  #same function but allows arguemnets for labels, c
   plot(x,y,...)
   abline(fit,col="red")
 }
+    
+#created with the aid of Robert Tribshirani and Trevor Hastie, from ISLR course
