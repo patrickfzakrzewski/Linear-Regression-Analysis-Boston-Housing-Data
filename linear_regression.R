@@ -28,7 +28,7 @@ summary(fit6)
     
 attach(Boston)  #attaches Boston data, eliminates need to call Boston for every lm function
 plot(medv~lstat)  #no need to call Boston
-points(lstat,fitted(fit6),col="red",pch=20) #uses pounts() instead of abline() because fit 6 is not straight line, fitted creates points for fit 6, 
+points(lstat,fitted(fit6),col="red",pch=20) #uses points() instead of abline() because fit 6 is not straight line, fitted creates points for fit 6, 
 fit7 = lm(medv~ploy(lstat,4)) #fits polynomial of degree 4,(simpler way)
 plot(1:20,1:20,pch=1:20,cex=2) #plots all plotting character, maginifies characters by 2
 fix() #opens up editor to edit dataframe
