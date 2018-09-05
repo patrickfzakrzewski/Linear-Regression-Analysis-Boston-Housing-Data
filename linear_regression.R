@@ -1,6 +1,6 @@
 # Purpose is to demonstrate simpe linear regression on real world dataset in R. 
 library(ISLR) #calls datasets from Introduction to Statistical Learning Textbook
-library(MASS) #calls datatsets from MASS dattabase
+library(MASS) #calls datatsets from MASS database
 
 names(Boston) #provides names of all variables in the Boston dataset
 ?Boston #gives more detailed information on each variable
