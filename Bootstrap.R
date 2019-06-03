@@ -1,7 +1,8 @@
 ##Bootstrap
 ##Minimnum risk investment
 
-alpha=function(x,y){ #function to determine optimal investment strategy between two assets so that risk (variance) is minimized
+#function to determine optimal investment strategy between two assets so that risk (variance) is minimized
+alpha=function(x,y){ 
   vx=var(x)
   vy=var(y)
   cxy=cov(x,y)
